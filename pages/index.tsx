@@ -1,7 +1,27 @@
 import type { NextPage } from "next";
 
-const foo = "foo" as const;
-let foo2 = foo;
+//Array型
+const foo: number[] = [1, 2, 3, 4];
+
+//tuple型
+const foo2: [number, string] = [1, "test"];
+
+//void型
+const foo3 = (): void => {
+  alert("test");
+};
+
+//Never型
+const foo4 = (bar: "a" | "b"): "a" | "b" => {
+  switch (bar) {
+    case "a":
+      return bar;
+    case "b":
+      return bar;
+    default:
+      return bar;
+  }
+};
 
 console.log(foo2);
 
