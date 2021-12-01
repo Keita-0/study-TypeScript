@@ -11,6 +11,17 @@ const foo3 = (): void => {
   alert("test");
 };
 
+let obj1: Record<string, number> = {
+  a: 1,
+  b: 3,
+};
+
+let obj2: { [key: string]: { foo: string } } = {
+  a: {
+    foo: "c",
+  },
+};
+
 //Never型
 const foo4 = (bar: "a" | "b"): "a" | "b" => {
   switch (bar) {
