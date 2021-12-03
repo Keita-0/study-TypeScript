@@ -20,6 +20,7 @@ let obj2: { [key: string]: { foo: string } } = {
   a: {
     foo: "c",
   },
+  b: { foo: "v" },
 };
 
 //Never型
