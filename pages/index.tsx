@@ -35,6 +35,32 @@ const foo4 = (bar: "a" | "b"): "a" | "b" => {
   }
 };
 
+//intersction types(交差型)
+type Foo = {
+  a: string;
+  b: boolean;
+};
+
+type Foo2 = {
+  c: string;
+};
+
+type Foo3 = Foo & Foo2;
+
+//union types
+type Foo4 = Foo | Foo2;
+
+const test2: Foo4 = {
+  a: "test",
+  b: true,
+};
+
+const test: Foo3 = {
+  a: "1",
+  b: false,
+  c: "test",
+};
+
 console.log(foo2);
 
 const Components = (props: { foo: boolean }) => {
