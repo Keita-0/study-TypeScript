@@ -55,6 +55,17 @@ const test2: Foo4 = {
   b: true,
 };
 
+type animal = "cat" | "dog";
+
+type F00 = {
+  [key in animal]: number;
+};
+
+const Foo2: F00 = {
+  cat: 3,
+  dog: 4,
+};
+
 const test: Foo3 = {
   a: "1",
   b: false,
