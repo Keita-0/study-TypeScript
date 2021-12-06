@@ -61,6 +61,12 @@ const test: Foo3 = {
   c: "test",
 };
 
+const test5: Foo3 = {
+  a: "1",
+  b: false,
+  c: "test",
+};
+
 console.log(foo2);
 
 const Components = (props: { foo: boolean }) => {
