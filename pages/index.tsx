@@ -42,7 +42,7 @@ type Foo = {
 };
 
 type Foo2 = {
-  c: string;
+  c: number;
 };
 
 type Foo3 = Foo & Foo2;
@@ -53,6 +53,7 @@ type Foo4 = Foo | Foo2;
 const test2: Foo4 = {
   a: "test",
   b: true,
+  c: 1,
 };
 
 type animal = "cat" | "dog";
