@@ -70,13 +70,13 @@ const Foo2: F00 = {
 const test: Foo3 = {
   a: "1",
   b: false,
-  c: "test",
+  c: 3,
 };
 
 const test5: Foo3 = {
   a: "1",
   b: false,
-  c: "test",
+  c: 9,
 };
 
 console.log(foo2);
