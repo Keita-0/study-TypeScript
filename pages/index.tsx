@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         type="retweet"
         retweetedUser="田中"
         user={{
-          name: "しまぶー！！！",
+          name: "しまぶー！",
           accountName: "shimabu_it",
           image:
             "https://doodleipsum.com/200x200/avatar-5?bg=6392D9&i=0f33dd99912f70859db2eeaf52dd71f4",
