@@ -2,6 +2,20 @@ import type { NextPage } from "next";
 import { TwitterCard } from "../components/TwitterCard";
 
 const Home: NextPage = () => {
+  //タプル型
+  const foo: [string, number] = ["test", 1];
+
+  const foos = (bar: "a" | "b"): string | number => {
+    switch (bar) {
+      case "a":
+        return "test";
+      case "b":
+        return 123;
+      default:
+        return bar;
+    }
+  };
+
   return (
     <>
       <TwitterCard
