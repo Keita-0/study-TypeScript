@@ -16,6 +16,14 @@ const Home: NextPage = () => {
     }
   };
 
+  let obj1: {} = {};
+  let obj2: object = {};
+  let obj3: Record<string, string> = {
+    a: "1",
+    b: "test",
+  };
+  let obj4: { [key: string]: unknown } = {};
+
   return (
     <>
       <TwitterCard
