@@ -3,7 +3,7 @@ import { TwitterCard } from "../components/TwitterCard";
 
 const Home: NextPage = () => {
   //タプル型
-  const foo: [string, number] = ["test", 1];
+  const foo: [string, number | ""] = ["test", ""];
 
   const foos = (bar: "a" | "b"): string | number => {
     switch (bar) {
