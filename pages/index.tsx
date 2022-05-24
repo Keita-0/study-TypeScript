@@ -2,27 +2,37 @@ import type { NextPage } from "next";
 import { TwitterCard } from "../components/TwitterCard";
 
 const Home: NextPage = () => {
-  //タプル型
-  const foo: [string, number | ""] = ["test", ""];
-
-  const foos = (bar: "a" | "b"): string | number => {
-    switch (bar) {
-      case "a":
-        return "test";
-      case "b":
-        return 123;
-      default:
-        return bar;
-    }
+  type Foo = {
+    a: number;
+    b: string;
   };
 
-  let obj1: {} = {};
-  let obj2: object = {};
-  let obj3: Record<string, string> = {
-    a: "1",
+  type bar = {
+    a: string;
+    c: boolean;
+  };
+  //intersection types
+  type FooBar = Foo & bar;
+
+  // const test: FooBar = {
+  //   a: "",
+  //   c: false,
+  //   b: "test",
+  // };
+
+  //unionTypesどれか一つの方が成立すればOK
+  type FooBar2 = Foo | bar;
+  const test2: FooBar2 = {
+    a: 1,
     b: "test",
+    c: true,
   };
-  let obj4: { [key: string]: unknown } = {};
+
+  if ("b" in test2) {
+    test2.a;
+  } else {
+    test2.a;
+  }
 
   return (
     <>
