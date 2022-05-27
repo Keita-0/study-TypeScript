@@ -13,8 +13,13 @@ type bar = {
   a: string;
   c: boolean;
 };
+
+type hoge = {
+  a: string;
+  c: boolean;
+};
 //intersection types
-type FooBar = Foo | bar;
+type FooBar = Foo | bar | hoge;
 
 const test: FooBar = {
   a: 2,
