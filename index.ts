@@ -16,7 +16,7 @@ type bar = {
 
 type hoge = {
   a: string;
-  c: boolean;
+  d: boolean;
 };
 //intersection types
 type FooBar = Foo | bar | hoge;
