@@ -20,9 +20,3 @@ type hoge = {
 };
 //intersection types
 type FooBar = Foo | bar | hoge;
-
-const test: FooBar = {
-  a: 2,
-  b: "test",
-  c: false,
-};
