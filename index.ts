@@ -20,4 +20,3 @@ type hoge = {
 };
 //intersection types
 type FooBar = Foo | bar | hoge;
-type FooBar2 = Foo | bar | hoge;
